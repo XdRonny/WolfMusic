@@ -120,7 +120,7 @@ async def initiate_bot():
 
 
 
-@app.on_message(filters.command("help") & filters.private)
+@app.on_message(filters.command("yuriko") & filters.private)
 async def help_command(_, message):
     text, keyboard = await help_parser(message.from_user.mention)
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
@@ -232,7 +232,7 @@ async def shikhar(_, CallbackQuery):
     await CallbackQuery.message.edit(text, reply_markup=keyboard)
 
 
-@app.on_callback_query(filters.regex(r"help_(.*?)"))
+@app.on_callback_query(filters.regex(r"yuriko_(.*?)"))
 async def help_button(client, query):
     home_match = re.match(r"help_home\((.+?)\)", query.data)
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
@@ -258,7 +258,7 @@ Hᴇʟᴘ Mᴇɴᴜ Cʟɪᴄᴋ Tʜᴇ Bᴜᴛᴛᴏɴs Fᴏʀ Mᴏʀᴇ Iɴꜰ�
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Back", callback_data="help_back"
+                        text="↪️ Back", callback_data="yuriko_back"
                     ),
                     InlineKeyboardButton(
                         text="🔄 Close", callback_data="close"
@@ -285,7 +285,7 @@ Hᴇʟᴘ Mᴇɴᴜ Cʟɪᴄᴋ Tʜᴇ Bᴜᴛᴛᴏɴs Fᴏʀ Mᴏʀᴇ Iɴꜰ�
         await query.message.edit(
             text=top_text,
             reply_markup=InlineKeyboardMarkup(
-                paginate_modules(curr_page - 1, HELPABLE, "help")
+                paginate_modules(curr_page - 1, HELPABLE, "yuriko")
             ),
             disable_web_page_preview=True,
         )
@@ -295,7 +295,7 @@ Hᴇʟᴘ Mᴇɴᴜ Cʟɪᴄᴋ Tʜᴇ Bᴜᴛᴛᴏɴs Fᴏʀ Mᴏʀᴇ Iɴꜰ�
         await query.message.edit(
             text=top_text,
             reply_markup=InlineKeyboardMarkup(
-                paginate_modules(next_page + 1, HELPABLE, "help")
+                paginate_modules(next_page + 1, HELPABLE, "yuriko")
             ),
             disable_web_page_preview=True,
         )
@@ -304,7 +304,7 @@ Hᴇʟᴘ Mᴇɴᴜ Cʟɪᴄᴋ Tʜᴇ Bᴜᴛᴛᴏɴs Fᴏʀ Mᴏʀᴇ Iɴꜰ�
         await query.message.edit(
             text=top_text,
             reply_markup=InlineKeyboardMarkup(
-                paginate_modules(0, HELPABLE, "help")
+                paginate_modules(0, HELPABLE, "yuriko")
             ),
             disable_web_page_preview=True,
         )
