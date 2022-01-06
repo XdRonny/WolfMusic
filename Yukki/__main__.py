@@ -121,9 +121,9 @@ async def initiate_bot():
 
 home_text_pm = f"""Hᴇʟʟᴏ,
 Mʏ Nᴀᴍᴇ Is 𝐏𝐲𝐓𝐠𝐂ᴀʟʟs[𝐌𝐮𝐬𝐢𝐜].
-A Tᴇʟᴇɢʀᴀᴍ Mᴜsɪᴄ Bᴏᴛ Aʟʟᴏᴡs Yᴏᴜ Tᴏ Pʟᴀʏ Mᴜsɪᴄ Oɴ Gʀᴏᴜᴘs Tʜʀᴏᴜɢʜ Tʜᴇ Nᴇᴡ Tᴇʟᴇɢʀᴀᴍ's Vᴏɪᴄᴇ Cʜᴀᴛs Pᴏᴡᴇʀ Bʏ [PʏTɢM𝐮𝐬𝐢𝐜⚡](https://telegra.ph/file/f0b385493e6d52a715ad4.png) !.
+A Tᴇʟᴇɢʀᴀᴍ Mᴜsɪᴄ Bᴏᴛ Aʟʟᴏᴡs Yᴏᴜ Tᴏ yURiko Mᴜsɪᴄ Oɴ Gʀᴏᴜᴘs Tʜʀᴏᴜɢʜ Tʜᴇ Nᴇᴡ Tᴇʟᴇɢʀᴀᴍ's Vᴏɪᴄᴇ Cʜᴀᴛs Pᴏᴡᴇʀ Bʏ [PʏTɢM𝐮𝐬𝐢𝐜⚡](https://telegra.ph/file/f0b385493e6d52a715ad4.png) !.
 
-Mᴀᴅᴇ Wɪᴛʜ ❤️ Bʏ [𝐕𝐢𝐣𝐚𝐲](http://t.me/Attitude_king_vj) """
+Mᴀᴅᴇ Wɪᴛʜ ❤️ Bʏ [𝐕𝐢𝐣𝐚𝐲](http://t.me/Shubhanshutya) """
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -222,7 +222,7 @@ async def help_parser(name, keyboard=None):
     return (
         """Hello {first_name},
 
-Hᴇʟᴘ Mᴇɴᴜ Oғ 𝐏𝐲𝐓𝐠[𝐌𝐮𝐬𝐢𝐜],\n.
+Hᴇʟᴘ Mᴇɴᴜ Oғ YURIKO[𝐌𝐮𝐬𝐢𝐜],\n.
 Hᴇʟᴘ Mᴇɴᴜ Cʟɪᴄᴋ Tʜᴇ Bᴜᴛᴛᴏɴs Fᴏʀ Mᴏʀᴇ Iɴꜰᴏ.\n
 Cᴏᴍᴍᴇɴᴅ Hɪɴᴛ : /
 """.format(
@@ -248,7 +248,7 @@ async def help_button(client, query):
     create_match = re.match(r"help_create", query.data)
     top_text = f"""Hᴇʟʟᴏ {query.from_user.first_name} Iᴛ's,
 
-Hᴇʟᴘ Mᴇɴᴜ Oғ 𝐏𝐲𝐓𝐠[𝐌𝐮𝐬𝐢𝐜],\n 
+Hᴇʟᴘ Mᴇɴᴜ Oғ YURIKO[𝐌𝐮𝐬𝐢𝐜],\n 
 Hᴇʟᴘ Mᴇɴᴜ Cʟɪᴄᴋ Tʜᴇ Bᴜᴛᴛᴏɴs Fᴏʀ Mᴏʀᴇ Iɴꜰᴏ.
 
  Cᴏᴍᴍᴇɴᴅ Hɪɴᴛ : /"""
