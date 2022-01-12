@@ -23,7 +23,7 @@ if str(getenv("SUPPORT_CHANNEL", "Starz_Support")).strip() == "":
     SUPPORT_CHANNEL = None
 else:
     SUPPORT_CHANNEL = str(getenv("SUPPORT_CHANNEL", "Starz_Support")
-if str(getenv("SUPPORT_GROUP", "RaichuUpdate")).strip() == "":
+if str(getenv("SUPPORT_GROUP", "Starz_Support")).strip() == "":
     SUPPORT_GROUP = None
 else:
     SUPPORT_GROUP = str(getenv("SUPPORT_GROUP", "RaichuOfficial"))
