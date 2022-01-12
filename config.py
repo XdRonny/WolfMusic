@@ -22,7 +22,7 @@ PING_IMG = getenv("PING_IMG", "https://telegra.ph/file/732363bb2cafd8281aadd.jpg
 if str(getenv("SUPPORT_CHANNEL", "Starz_Support")).strip() == "":
     SUPPORT_CHANNEL = None
 else:
-    SUPPORT_CHANNEL = str(getenv("SUPPORT_CHANNEL", "RaichuUpdate")
+    SUPPORT_CHANNEL = str(getenv("SUPPORT_CHANNEL", "Starz_Support")
 if str(getenv("SUPPORT_GROUP", "RaichuUpdate")).strip() == "":
     SUPPORT_GROUP = None
 else:
