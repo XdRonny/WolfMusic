@@ -23,7 +23,7 @@ if str(getenv("SUPPORT_CHANNEL", "international_chatting_hub")).strip() == "":
     SUPPORT_CHANNEL = None
 else:
     SUPPORT_CHANNEL = str(getenv("SUPPORT_CHANNEL", "Shubhanshutya")
-if str(getenv("SUPPORT_GROUP", "RaiChuXD")).strip() == "":
+if str(getenv("SUPPORT_GROUP", "BrayDenXD")).strip() == "":
     SUPPORT_GROUP = None
 else:
     SUPPORT_GROUP = str(getenv("SUPPORT_GROUP", "RaichuOfficial"))
