@@ -19,7 +19,7 @@ OWNER_ID = list(map(int, getenv("OWNER_ID", "1668305941").split()))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001654637381"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Innexiabot")
 PING_IMG = getenv("PING_IMG", "https://telegra.ph/file/732363bb2cafd8281aadd.jpg")
-if str(getenv("SUPPORT_CHANNEL", "RaichuUpdate")).strip() == "":
+if str(getenv("SUPPORT_CHANNEL", "RaichuUpdate")).strip() == ":
     SUPPORT_CHANNEL = None
 else:
     SUPPORT_CHANNEL = str(getenv("SUPPORT_CHANNEL", "RaichuUpdate")
