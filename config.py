@@ -7,7 +7,7 @@ load_dotenv()
 # VARS
 
 get_queue = {}
-STRING = getenv("STRING_SESSION", "AQChKll4pT0GVgeBvJup9bez3tsdsj7pgjIfdzS7oQBnS5fmFPze-sE8rBqohlwjGVBwDfsQfXXEfDAaipUOjemBKv6ZTgHd7b_-dQAYzuMJKHhX4plxEfQKxDAHiu7RAwoDh--vqmJCDfzDTH0HA9uuv3179I3o-P1E5-jh_Bo77zo3G7dUweSy52zUyJgAO8cp1leImoMx79XDiypT0H4ASH6ygvN3f2FCFkPi5tPo8ZBBK4B9z0UCdqyhZXfseCHNrgd8WBMJlPy7jdEbpFM0vujzF_ZCnO_LJowJmoJE59dBN4tN1oYY0zR1DT0YBISdLDUeTuEc7X-2LtplwJiJeSrSXAA")
+STRING = getenv("STRING_SESSION", "")
 BOT_TOKEN = getenv("BOT_TOKEN" , "1607821276:AAGuamsqQ2pe9yHz1fn9kWuI268o_vO9Yuc")
 API_ID = int(getenv("API_ID", "15816197"))
 API_HASH = getenv("API_HASH", "42a79ffac6e037eb1a2671298c34d5de")
