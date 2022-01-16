@@ -4,6 +4,52 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from Yukki import db_mem
 
 
+def url_markup(videoid, duration, user_id, query, query_type):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="▶️ 𝑷𝒍𝒂𝒚 𝒕𝒉𝒊𝒔 𝒔𝒐𝒏𝒈 𝑵𝒐𝒘",
+                callback_data=f"Yukki {videoid}|{duration}|{user_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="❮𝖓𝖊𝖝𝖙",
+                callback_data=f"slider B|{query_type}|{query}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="❌",
+                callback_data=f"forceclose {query}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="𝖓𝖊𝖝𝖙❯",
+                callback_data=f"slider F|{query_type}|{query}|{user_id}",
+            
+            
+                
+                
+            ),
+        ],
+    ]
+    return buttons
+
+
+def url_markup2(videoid, duration, user_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="▶️ Play Now",
+                callback_data=f"Yukki {videoid}|{duration}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="🗑 Close ",
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+        ],
+    ]
+    return buttons
+
+
 def search_markup(
     ID1,
     ID2,
