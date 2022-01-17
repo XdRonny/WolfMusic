@@ -5,23 +5,10 @@ from Yukki import db_mem
 
 
 
-
+def url_markup(videoid, duration, user_id, query, query_type):
 
 def url_markup2(videoid, duration, user_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="▶️ Play Now",
-                callback_data=f"Yukki {videoid}|{duration}|{user_id}",
-            ),
-            InlineKeyboardButton(
-                text="🗑 Close ",
-                callback_data=f"forceclose {videoid}|{user_id}",
-            ),
-        ],
-    ]
-    return buttons
-
+    
 
 def search_markup(
     ID1,
